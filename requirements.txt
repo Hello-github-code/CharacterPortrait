@@ -1,0 +1,9 @@
+faiss==1.8.0
+gradio==3.39.0
+langchain==0.1.11
+langchain_community==0.0.27
+langchain_core==0.1.30
+numpy==1.24.3
+torch==2.0.1
+transformers==4.38.2
+zhipuai==2.1.5.20241204
