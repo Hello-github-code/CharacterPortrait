@@ -8,7 +8,8 @@ CharacterPortrait 是一个基于大语言模型的智能人物画像生成及�
 - 支持批量用户数据处理
 - 提供友好的 Web 交互界面
 
-注 : 在 character_portrait.py 文件中需加载预训练的 BERT 模型和 tokenizer. 本仓库已经加入了这部分内容 (即model文件夹下的text2vec-base-chinese), 但由于模型较大将导致clone耗时较长. 
+### 预训练的BERT模型和tokenizer配置
+在 character_portrait.py 文件中需加载预训练的 BERT 模型和 tokenizer. 因模型较大将导致clone耗时较长, 本仓库未加入这部分内容, 请自行在model文件夹下添加text2vec-base-chinese文件 (可将character_portrait.py 文件中的model导入方式改成从远程服务器加载, 需要科学上网).
 
 ### API密钥配置
 在 `config/api_keys.py` 文件中配置智谱AI的API密钥：
@@ -27,10 +28,12 @@ ZHIPUAI_API_KEYS = {
 - `chat_key`: 用于主对话系统的API密钥
 - `profile_keys`: 用于用户画像更新的多个API密钥，支持并行处理
 
+
 ## 安装依赖
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ## 运行程序
 ```bash

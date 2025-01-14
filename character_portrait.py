@@ -59,9 +59,9 @@ class ChatGLM4(LLM):
 # 加载 llm
 llm = ChatGLM4(zhipuai_api_key)
 
-# 加载预训练的 BERT 模型和 tokenizer
-# model_name = 'shibing624/text2vec-base-chinese'    # 从远程服务器加载预训练的模型，需要科学上网
-model_name = 'model/text2vec-base-chinese'    # 从本地加载预训练的模型，需要先下载模型文件到 model 目录
+# 加载预训练的 BERT 模型和 tokenizer, model_name 配置二选一
+model_name = 'shibing624/text2vec-base-chinese'    # 从远程服务器加载预训练的模型，需要科学上网
+# model_name = 'model/text2vec-base-chinese'    # 从本地加载预训练的模型，需要先下载模型文件到 model 目录
 tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertModel.from_pretrained(model_name)
 

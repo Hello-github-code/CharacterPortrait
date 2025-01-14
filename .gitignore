@@ -1,5 +1,5 @@
 # API密钥配置
-config_me/api_keys.py
+config_me/
 
 # Python
 __pycache__/
@@ -22,3 +22,6 @@ ENV/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 模型文件
+model/text2vec-base-chinese/
