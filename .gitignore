@@ -24,4 +24,4 @@ ENV/
 Thumbs.db
 
 # 模型文件
-model/text2vec-base-chinese/
+model/
